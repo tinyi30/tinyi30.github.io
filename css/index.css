@@ -1,0 +1,59 @@
+.heading-wrap {
+    position: fixed; z-index: -1;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    width: 100%;
+    height: 100%;
+    
+    display: table;
+}
+.heading-wrap-v {
+    display: table-cell;
+    
+    width: 100%;
+    vertical-align: middle;
+}
+.heading {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 7.1428em;
+    line-height: 1;
+    color: #e7545e;
+}
+.heading-desc {
+    margin-top: -18px;
+    
+    font-size: 1.12em;
+    color: #99ba5c;
+    opacity: 1;
+    text-align: center;
+    word-spacing: 4px;
+        
+    animation: fadeIn 2s 0.5s both ease;
+    -webkit-animation: fadeIn 2s 0.5s both ease;
+    
+}
+.heading-desc br {
+    display: none;
+}
+@media screen and (max-width: 410px) {
+    .heading-desc {
+        margin-top: 0;
+    }
+    /* 主標題斷行之後隱藏空白格 */
+    .heading-desc span {
+        display: none;
+    }
+    /* 小敘述斷成兩行 */
+    .heading-desc br {
+        display: inline;
+    }
+}
+@media screen and (max-width: 767px) {
+    .heading {
+        font-size: 7.4em;
+    }
+}
+
+.header {}
+.nav {}

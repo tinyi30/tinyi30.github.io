@@ -1,0 +1,86 @@
+.content {
+    padding-top: 250px;
+    padding-bottom: 200px;
+}
+@media screen and (max-width: 767px) {
+    .content {
+        padding-top: 50px;
+    }
+}
+
+.work-item {
+    position: relative;
+    
+    display: inline-block;
+    
+    width: 100%;
+    overflow: hidden;
+    
+    margin-bottom: 30px;
+    
+}
+.work-item img {
+    transition: all 0.1s ease;
+    -webkit-transition: all 0.1s ease;
+    
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* 敘述容器(白色那塊) */
+.work-item-desc {
+    position: absolute;
+    
+    display: inline-block;
+    
+    left: 0; top: 0;
+    right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+}
+/* 置中元素 */
+.work-item-desc::before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+}
+/* 敘述文字 */
+.work-item-desc .text {
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 99%;
+    
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #e7545e;
+    font-size: 1.850em;
+    
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+}
+.work-item:hover .work-item-desc {
+    opacity: 1;
+}
+.work-item:hover .work-item-desc .text {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+.work-item:hover img {
+    transform: scale(0.97);
+    -webkit-transform: scale(0.97);
+    -webkit-filter: blur(2px);
+}

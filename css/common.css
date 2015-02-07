@@ -1,0 +1,249 @@
+/**
+ * Animate.css
+ **/
+.anim-dur-2s {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+.anim-dur-3s {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+.anim-delay-1s {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+.anim-delay-2s {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.anim-delay-300ms {
+    -webkit-animation-delay: 300ms;
+    animation-delay: 300ms;
+}
+
+/**
+ * Web Font
+ **/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.f-normal {
+    font-weight: 400;
+}
+.f-bold {
+    font-weight: 700;
+}
+/* Overriding bootstrap heading font weight */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/**
+ * Responsive font size
+ **/
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/**
+ * header nav bar
+ **/
+.header {
+    animation: fadeInDown 0.2s 0.3s both ease;
+    -webkit-animation: fadeInDown 0.2s 0.3s both ease;
+    
+    border-bottom: 2px solid #f2f2f2;
+/*    box-shadow: inset 0 -2px 0 0 #f2f2f2;*/
+}
+.page-index .header {
+    border: none;
+    animation: none;
+    -webkit-animation: none;
+}
+.header .logo {
+    position: relative;
+    z-index: 101;
+    
+    float: left;
+    
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    
+    background-color: #e7545e;
+    text-align: center;
+}
+.header .logo::after {
+    /* ghost centering element */
+    
+    content: '';
+    
+    display: inline-block;
+    height: 100%;
+    width: 1%;
+    vertical-align: middle;
+}
+.header .logo span {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.nav-links {
+    margin: 0;
+    text-align: right;
+    
+    padding: 33px 0
+}
+.page-index .nav-links {
+    padding: 40px 0 0;
+    text-align: center;
+}
+.nav-links li {
+    display: inline-block;
+    
+    margin-right: 8.94%;
+    
+    font-size: 1.07142857em;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 4px;
+}
+.nav-links li:last-child {
+    margin-right: 0;
+}
+.nav-links li a {
+    position: relative;
+    
+    color: #3ca4b5;
+    text-decoration: none;
+}
+.nav-links li a:hover::after {
+    content: '';
+    
+    animation: fadeInDown 0.5s both ease;
+    -webkit-animation: fadeInDown 0.5s both ease;
+    
+    position: absolute;
+    bottom: -8px; left: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: #99ba5c;
+}
+.nav-links li a.active::after {
+    content: '';
+    
+    animation: none;
+    -webkit-animation: none;
+    
+    position: absolute;
+    bottom: -8px; left: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: #99ba5c;
+}
+
+/**
+ * Nav for mobile
+ **/
+.mobile-nav-btn {
+    display: inline-block;
+    
+    float: right;
+    font-size: 2.14em;
+    
+    padding-top: 32px;
+    color: #3ca4b5;
+}
+.mobile-nav-btn.nav-close {
+    position: relative;
+    top: -3px;
+    display: none;
+}
+.mobile-nav-btn:hover, .mobile-nav-btn:focus {
+    text-decoration: none;
+    color: #99ba5c;
+}
+.nav-open .nav-open {
+    display: none !important;
+}
+.nav-open .nav-close {
+    display: inline-block !important;
+}
+body.nav-open {
+    overflow: hidden;
+}
+.mobile-nav {
+    position: fixed;
+    z-index: 100;
+    
+    left: 0; top: 92px;
+    right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    
+    display: none;
+}
+.mobile-nav-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.mobile-nav-links li {
+    display: block;
+    margin: 0;
+}
+.mobile-nav-links li a {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    color: #e7545e;
+    font-size: 3.42857em;
+    text-decoration: none !important;
+}
+
+/**
+ * Footer
+ **/
+.footer {
+    width: 100%;
+    
+    padding: 10px 0;
+}
+.page-index .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.footer-items {
+}
+.footer-items .footer-item {
+    font-size: 1.07142857em;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #3ca4b5;
+    font-weight: bold;
+}
+.footer-items .footer-item-copyright {
+    text-align: right;
+}
+.footer-item a {
+    color: inherit;
+    text-decoration: none !important;
+}
+.footer-item a:hover {
+    color: #99ba5c;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-items .footer-item {
+        text-align: center;
+    }
+}
