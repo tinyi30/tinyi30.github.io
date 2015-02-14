@@ -27,6 +27,13 @@
     font-size: 1.286em;
     line-height: 1.4;
 }
+.content-block a, .content-block a:focus {
+    color: #99ba5c;
+    text-decoration: none !important;
+}
+.content-block a:hover {
+    color: #e7545e;
+}
 
 .content-block .green-words {
     display: block;
