@@ -6,22 +6,40 @@
 
 $(function () {
     $('.mobile-nav-btn').on('click', function ($event) {
+        var ANIM_NAME_OPEN = 'fadeInDown',
+            ANIM_NAME_CLOSE = 'fadeOutUp';
+
         var $this = $(this),
-            $mnav = $('.mobile-nav');
+            $mnav = $('.mobile-nav'),
+            $body = $('body');
+
+        var onCloseAnimEnd = function ($e) {
+            $mnav.off('animationend webkitAnimationEnd', onCloseAnimEnd);
+
+            if ($e.originalEvent.animationName === ANIM_NAME_CLOSE) {
+                $mnav.removeClass('show');
+            }
+        };
 
         if ($this.hasClass('nav-open')) {
-            $mnav.addClass('show');
+            if (!$body.hasClass('nav-open')) {
+                /**
+                 * 打開選單
+                 */
+                $mnav.addClass('show');
 
-            var t = $mnav.offset().top;
-            $('body').addClass('nav-open');
+                var t = $mnav.offset().top;
+                $body.addClass('nav-open');
+            }
         }
         else {
-            var onAnimEnd = function () {
-                $mnav.off('animationend webkitAnimationEnd', onAnimEnd);
-                $mnav.removeClass('show');
-            };
-            $mnav.on('animationend webkitAnimationEnd', onAnimEnd);
-            $('body').removeClass('nav-open');
+            if ($body.hasClass('nav-open')) {
+                /**
+                 * 關閉選單
+                 */
+                $mnav.on('animationend webkitAnimationEnd', onCloseAnimEnd);
+                $body.removeClass('nav-open');
+            }
         }
         
         $event.preventDefault();
