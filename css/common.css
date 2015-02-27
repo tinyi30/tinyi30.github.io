@@ -41,6 +41,18 @@ body {
 }
 
 /**
+ * Selection color
+ */
+::selection {
+    color: #fff;
+    background-color: rgba(231, 84, 94, 1.0);
+}
+::-moz-selection {
+    color: #fff;
+    background-color: rgba(231, 84, 94, 1.0);
+}
+
+/**
  * Responsive font size
  **/
 @media screen and (max-width: 767px) {
