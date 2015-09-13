@@ -43,7 +43,7 @@
         url('../fonts/gothamrnd-book.woff') format('woff'),
         url('../fonts/gothamrnd-book.ttf') format('truetype'),
         url('../fonts/gothamrnd-book.svg#GothamRoundedBook') format('svg');
-    font-weight: 400;
+    font-weight: 300;
 }
 @font-face {
     font-family: 'GothamRounded';
@@ -52,7 +52,7 @@
         url('../fonts/gothamrnd-medium.woff') format('woff'),
         url('../fonts/gothamrnd-medium.ttf') format('truetype'),
         url('../fonts/gothamrnd-medium.svg#GothamRoundedMedium') format('svg');
-    font-weight: 300;
+    font-weight: 400;
 }
 @font-face {
     font-family: 'GothamRounded';
