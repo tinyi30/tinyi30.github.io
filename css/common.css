@@ -26,8 +26,46 @@
 /**
  * Web Font
  **/
+
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../fonts/gothamrnd-bold.eot');
+    src: url('../fonts/gothamrnd-bold.eot') format('embedded-opentype'),
+        url('../fonts/gothamrnd-bold.woff') format('woff'),
+        url('../fonts/gothamrnd-bold.ttf') format('truetype'),
+        url('../fonts/gothamrnd-bold.svg#GothamRoundedBold') format('svg');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../fonts/gothamrnd-book.eot');
+    src: url('../fonts/gothamrnd-book.eot') format('embedded-opentype'),
+        url('../fonts/gothamrnd-book.woff') format('woff'),
+        url('../fonts/gothamrnd-book.ttf') format('truetype'),
+        url('../fonts/gothamrnd-book.svg#GothamRoundedBook') format('svg');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../fonts/gothamrnd-medium.eot');
+    src: url('../fonts/gothamrnd-medium.eot') format('embedded-opentype'),
+        url('../fonts/gothamrnd-medium.woff') format('woff'),
+        url('../fonts/gothamrnd-medium.ttf') format('truetype'),
+        url('../fonts/gothamrnd-medium.svg#GothamRoundedMedium') format('svg');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'GothamRounded';
+    src: url('../fonts/gothamrnd-light.eot');
+    src: url('../fonts/gothamrnd-light.eot') format('embedded-opentype'),
+        url('../fonts/gothamrnd-light.woff') format('woff'),
+        url('../fonts/gothamrnd-light.ttf') format('truetype'),
+        url('../fonts/gothamrnd-light.svg#GothamRoundedLight') format('svg');
+    font-weight: 100;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'GothamRounded', sans-serif;
 }
 .f-normal {
     font-weight: 400;
