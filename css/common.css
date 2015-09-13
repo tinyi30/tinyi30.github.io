@@ -143,6 +143,8 @@ body {
     vertical-align: middle;
 }
 .header .logo span {
+    position: relative;
+    left: 2px;
     display: inline-block;
     vertical-align: middle;
     color: white;
