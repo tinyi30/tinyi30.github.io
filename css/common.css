@@ -108,7 +108,7 @@ body {
 
     animation: fadeInDown 0.2s .5s both ease;
     -webkit-animation: fadeInDown 0.2s .5s both ease;
-    
+
     border-bottom: 2px solid #f2f2f2;
 /*    box-shadow: inset 0 -2px 0 0 #f2f2f2;*/
 
@@ -122,39 +122,28 @@ body {
 .header .logo {
     position: relative;
     z-index: 101;
-    
+
     float: left;
-    
+
     display: inline-block;
     width: 90px;
     height: 90px;
-    
+
     background-color: #e7545e;
     text-align: center;
 }
-.header .logo::after {
-    /* ghost centering element */
-    
-    content: '';
-    
-    display: inline-block;
-    height: 100%;
-    width: 1%;
-    vertical-align: middle;
-}
 .header .logo span {
-    position: relative;
-    left: 2px;
     display: inline-block;
     vertical-align: middle;
     color: white;
     font-size: 18px;
     letter-spacing: 1px;
+    padding: 20px;
 }
 .nav-links {
     margin: 0;
     text-align: right;
-    
+
     padding: 33px 0
 }
 .page-index .nav-links {
@@ -163,9 +152,9 @@ body {
 }
 .nav-links li {
     display: inline-block;
-    
+
     margin-right: 8.94%;
-    
+
     font-size: 1.07142857em;
     font-weight: 700;
     line-height: 24px;
@@ -176,16 +165,16 @@ body {
 }
 .nav-links li a {
     position: relative;
-    
+
     color: #3ca4b5;
     text-decoration: none;
 }
 .nav-links li a:hover::after {
     content: '';
-    
+
     animation: fadeInDown 0.5s both ease;
     -webkit-animation: fadeInDown 0.5s both ease;
-    
+
     position: absolute;
     bottom: -8px; left: -2px;
     width: 100%;
@@ -194,10 +183,10 @@ body {
 }
 .nav-links li a.active::after {
     content: '';
-    
+
     animation: none;
     -webkit-animation: none;
-    
+
     position: absolute;
     bottom: -8px; left: -2px;
     width: 100%;
@@ -213,10 +202,10 @@ body {
     z-index: 0;
 
     display: inline-block;
-    
+
     float: right;
     font-size: 2.14em;
-    
+
     padding-top: 32px;
     color: #3ca4b5;
 }
@@ -260,14 +249,14 @@ body.nav-open {
 .mobile-nav {
     position: fixed;
     z-index: 100;
-    
+
     left: 0; top: 92px;
     right: 0; bottom: 0;
     width: 100%;
     height: 100%;
-    
+
     background-color: rgba(255, 255, 255, 0);
-    
+
     display: none;
 
     transition: background-color .6s ease;
@@ -313,7 +302,7 @@ body.nav-open {
  **/
 .footer {
     width: 100%;
-    
+
     padding: 10px 0;
 }
 .page-index .footer {
