@@ -66,6 +66,7 @@
 
 body {
     font-family: 'GothamRounded', sans-serif;
+    font-weight: 300;
 }
 .f-normal {
     font-weight: 400;
@@ -75,7 +76,7 @@ body {
 }
 /* Overriding bootstrap heading font weight */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    font-weight: 300;
 }
 
 /**
@@ -317,7 +318,7 @@ body.nav-open {
     line-height: 24px;
     letter-spacing: 2px;
     color: #666;
-    font-weight: bold;
+    font-weight: 300;
 }
 .footer-items .footer-item-copyright {
     text-align: right;
