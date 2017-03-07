@@ -51,7 +51,7 @@ $(function () {
      **/
     $('.js-partial').each(function () {
         var $this = $(this),
-            src = $this.data('src');
+            src = $this.data('src') + '.html';
         
         if (!src) {
             return;

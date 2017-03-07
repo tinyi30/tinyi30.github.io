@@ -93,6 +93,16 @@
     max-width: 1800px;
     height: auto;
 }
+.work .gallery p {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    color: #666;
+    font-size: 1.286em;
+    line-height: 1.4;
+}
 
 @media screen and (max-width: 767px) {
     .work .content-block {
