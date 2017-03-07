@@ -52,7 +52,7 @@
         url('../fonts/gothamrnd-medium.woff') format('woff'),
         url('../fonts/gothamrnd-medium.ttf') format('truetype'),
         url('../fonts/gothamrnd-medium.svg#GothamRoundedMedium') format('svg');
-    font-weight: 100;
+    font-weight: 400;
 }
 @font-face {
     font-family: 'GothamRounded';
@@ -75,7 +75,7 @@ body {
 }
 /* Overriding bootstrap heading font weight */
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: 700;
 }
 
 /**
@@ -156,7 +156,7 @@ body {
     margin-right: 8.94%;
 
     font-size: 1.07142857em;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 24px;
     letter-spacing: 4px;
 }
