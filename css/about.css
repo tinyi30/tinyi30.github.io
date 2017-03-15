@@ -28,7 +28,7 @@
     line-height: 1.8;
 }
 .content-block a, .content-block a:focus {
-    color: #bbb;
+    color: #aaa;
     text-decoration: none !important;
 }
 .content-block a:hover {
@@ -44,7 +44,7 @@
     margin-bottom: 26px;
     
     font-size: 0.857em;
-    color: #bbb;
+    color: #aaa;
     text-transform: uppercase;
 }
 .content-block .green-words.align {
@@ -56,7 +56,7 @@
     content: '/';
     display: inline-block;
     padding: 0 10px;
-    color: #bbb !important;
+    color: #aaa !important;
 }
 .content-block .green-words.align:last-of-type::after {
     display: none;
