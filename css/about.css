@@ -106,7 +106,7 @@
     max-width: 800px;
     margin: 0 auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: #666;
     font-size: 1.143em;
     line-height: 1.8;
@@ -120,3 +120,32 @@
         margin-bottom: 6em;
     }
 }
+
+.new-sec-title {
+  /* 標題文字 css */
+  font-size: 26px;
+  font-weight: bold;
+  
+  margin: 30px 0 30px;
+}
+.new-sec-title > span {
+  position: relative;
+}
+.new-sec-title > span::after {
+  content: '';
+
+  position: absolute;
+  left: 50%;
+  top: 120%;  /* 距離文字多遠 */
+
+  width: 50px;  /* 寬度 */
+  height: 4px;  /* 高度 */
+  margin-left: -25px;  /* 寬度的一半 */
+
+  border-radius: 5px;  /* 圓角 */
+  background-color: #24b685; /* 顏色 */
+
+}
+
+.work .content-block strong { color: #333 };
+.work .gallery strong { color: #333 };
