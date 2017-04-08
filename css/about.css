@@ -65,6 +65,15 @@
 /**
  * For individual work
  **/
+
+.work .content-block strong { 
+    color: #333 
+}
+.work .gallery strong { 
+    color: #333 
+}
+
+
 .work .content-block h2 {
     margin-bottom: 40px;
 }
@@ -147,5 +156,4 @@
 
 }
 
-.work .content-block strong { color: #333 };
-.work .gallery strong { color: #333 };
+
